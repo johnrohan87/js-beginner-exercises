@@ -11,12 +11,14 @@ function getColor(colorNumber=0)
 	}
 }
 
-function getAllStudentColors(){
+function getAllStudentColors(ammount){
 	
-	//your loop here
-	var exampleColor = getColor(1);
+    //your loop here
+    for (i = 0; i < ammount; i++){
+        var exampleColor = getColor();
+    }
 }
 
 //call the function below with the number of students in the class and print on the console
-getAllStudentColors();
+getAllStudentColors(10);
 
