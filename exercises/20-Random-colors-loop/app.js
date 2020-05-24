@@ -6,7 +6,7 @@ function getColor(colorNumber=0)
 		case 1: return "red"; break;
 		case 2: return "yellow"; break;
 		case 3: return "blue"; break;
-		case 4: return "green"; break;
+        case 4: return "green"; break;
 		default: return "black"; break;
 	}
 }
@@ -15,7 +15,12 @@ function getAllStudentColors(ammount){
 	
     //your loop here
     for (i = 0; i < ammount; i++){
-        var exampleColor = getColor();
+        if (i < ammount){
+            var rndint1_4 = (Math.round(Math.random() * (3) +1))
+            var exampleColor = getColor(rndint1_4);
+            console.log(exampleColor)
+            //return exampleColor
+        }
     }
 }
 
